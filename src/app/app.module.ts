@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactEmailComponent } from './contact/email.component';
 import { ContactPhoneComponent } from './contact/phone.component';
 import { WorkComponent } from './work/work.component';
+import { WorkInfoComponent } from './work/workinfo.component';
 
 import 'hammerjs';
 import { 
@@ -56,7 +57,8 @@ import {
     HomeComponent,
     ContactEmailComponent,
     ContactPhoneComponent,
-    WorkComponent
+    WorkComponent,
+    WorkInfoComponent
   ],
   imports: [
     BrowserModule,

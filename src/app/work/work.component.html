@@ -13,20 +13,25 @@ fxLayoutGap.xs="0"
     fxLayoutGap.xs="0"
     fxLayoutWrap="wrap"
     >
-    <!-- <div class="item item-4" fxFlex fxFlexOffset="50px"  fxFlexOffset.xs="0">Item 4</div>
-    <div class="item item-5" fxFlex="200px">Item 5</div> -->
         <div class="work-item text-center mar-y-10" [fxFlex.xs]="xsDistribution" [fxFlex.sm]="smDistribution" [fxFlex.md]="mdDistribution" [fxFlex.lg]="lgDistribution" *ngFor="let work of works">
             <div>
-                <a href="{{work.url}}" target="_blank">
+                <a [routerLink]="[work.id]"  >
                     {{ work.name }}
                 </a>
             </div>
-            <label for="description">
-                {{ work.description }}
-            </label>
+            <div>
+                <label for="description">
+                    {{ work.description }}
+                </label>
+            </div>
+            <div>
+                <label for="visit">
+                    <a href="{{ work.url }}" target="_blank">
+                        Visit Site
+                    </a>
+                </label>
+            </div>
         </div>
+
     </div>
-    <!-- <div class="item item-1" fxFlex>Section 4.2</div>
-    <div class="item item-1" fxFlex>Section 4.3</div>
-    <div class="item item-1" fxFlex>Section 4.4</div> -->
 </div>

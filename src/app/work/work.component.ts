@@ -19,26 +19,32 @@ export class WorkComponent implements OnInit {
     lgDistribution = 100 / 6;
     works = [
         {
+            
+            id:1,
             name:"Rose E-Prescription",
             description:"Appointment ERM",
             url:'https://www.erx.rose-pharmacy.com',
         },
         {
+            id:2,
             name:"Ohabart",
             description:"Job Archive",
             url:'http://www.ohabart.com',
         },
         {
+            id:3,
             name:"Rose E-Prescription",
             description:"Search Archive",
             url:'https://www.erx.rose-pharmacy.com',
         },
         {
+            id:4,
             name:"Ohabart",
             description:"Job Archive",
             url:'http://www.ohabart.com',
         },
         {
+            id:5,
             name:"Rose E-Prescription",
             description:"Appointment ERM",
             url:'https://www.erx.rose-pharmacy.com',
