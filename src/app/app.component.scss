@@ -1,0 +1,7 @@
+.work-item{
+    background-color: gray;
+    border: 1px solid #000;
+    &:last-child{
+        margin-right: 0px;
+    }
+}
