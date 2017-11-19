@@ -14,7 +14,7 @@ export class WorkComponent implements OnInit {
     returnUrl: string;
     loading = false;
     xsDistribution = 100 / 1;
-    smDistribution = 100 / 2;
+    smDistribution = 100 / 2.08;
     mdDistribution = 100 / 4.18;
     lgDistribution = 100 / 6;
     works = [
