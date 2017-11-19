@@ -19,3 +19,15 @@
 
 /* CHUCKSTRAP OVERWRITE */
 @import '~chuckstrap/css/chuckstrap.min.css';
+
+.w-125{
+    min-width: 125px;
+    max-width: 125px;
+}
+.fa-1-8{
+    font-size: 1.8em;
+}
+.h-425{
+    min-height: 425px;
+    max-height: 425px;
+}

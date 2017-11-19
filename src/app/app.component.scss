@@ -1,7 +1,11 @@
 .work-item{
-    background-color: gray;
-    border: 1px solid #000;
+    // background-color: gray;
+    // border: 1px solid #000;
     &:last-child{
         margin-right: 0px;
     }
+}
+.work-item-lists{
+    background-color: gray;
+    border: 1px solid #000;
 }

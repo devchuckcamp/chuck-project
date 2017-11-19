@@ -48,6 +48,12 @@ export class WorkComponent implements OnInit {
             name:"Rose E-Prescription",
             description:"Appointment ERM",
             url:'https://www.erx.rose-pharmacy.com',
+        },
+        {
+            id:6,
+            name:"Rose E-Prescription",
+            description:"Appointment ERM",
+            url:'https://www.erx.rose-pharmacy.com',
         }
     ];
 
