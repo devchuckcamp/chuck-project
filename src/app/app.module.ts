@@ -9,6 +9,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CarouselModule,CarouselComponent,SlideComponent,CarouselConfig } from 'angular-bootstrap-md/carousel';
+
+
 //Pages
 import { HomeComponent } from './home/home.component';
 import { ContactEmailComponent } from './contact/email.component';
@@ -58,14 +61,15 @@ import {
     ContactEmailComponent,
     ContactPhoneComponent,
     WorkComponent,
-    WorkInfoComponent
+    WorkInfoComponent,
+    CarouselComponent,SlideComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatIconModule, 
+    MatIconModule,
     MatButtonModule,  
     MatMenuModule, 
     MatCheckboxModule, 
@@ -103,7 +107,9 @@ import {
     NgbModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CarouselConfig
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

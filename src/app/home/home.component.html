@@ -1,11 +1,62 @@
-
-    <div class="container-fluid"
+    <div class="container-fluid pad-x-0"
     fxLayout
     fxLayout.xs="column"
     fxLayoutAlign="center"
     fxLayoutGap="10px"
     fxLayoutGap.xs="0">
-        <div class="item item-1 pad-t-10" fxFlex="35%" fxFlex.sm="100%" fxLayoutAlign.sm="center">
+
+    
+        <!--Carousel Wrapper-->
+        <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+            <!--First slide-->
+            <mdb-slide>
+                <div class="view hm-black-light">
+                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                    <div class="mask waves-light" mdbRippleRadius></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Light mask</h3>
+                    <p>First text</p>
+                </div>
+            </mdb-slide>
+            <!--/First slide-->
+            <!--Second slide-->
+            <mdb-slide>
+                <div class="view hm-black-strong">
+                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+                    <div class="mask waves-light" mdbRippleRadius></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Strong mask</h3>
+                    <p>Secondary text</p>
+                </div>
+            </mdb-slide>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <mdb-slide>
+                <div class="view hm-black-slight">
+                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+                    <div class="mask waves-light" mdbRippleRadius></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Slight mask</h3>
+                    <p>Third text</p>
+                </div>
+            </mdb-slide>
+            <!--/Third slide-->
+        </mdb-carousel>
+        <!--/.Carousel Wrapper-->
+                
+    </div>
+
+
+    <div class="container-fluid"
+        fxLayout
+        fxLayout.xs="column"
+        fxLayoutAlign="center"
+        fxLayoutGap="10px"
+        fxLayoutGap.xs="0">
+        <div class="item item-1 pad-y-10" fxFlex="35%" fxFlex.sm="100%" fxLayoutAlign.sm="center">
             <img class="img-circle mar-0-auto h-425" src="../assets/img/me_cartoon3.jpg">
         </div>
         <div class="item item-1 pad-t-10" fxFlex="65%" fxFlex.sm="100%" >
@@ -101,82 +152,4 @@
             
             </mat-expansion-panel>
         </div>
-    </div>
-
-    <div class="container-fluid text-center"
-    fxLayout
-    fxLayout.xs="column"
-    fxLayoutAlign="center"
-    fxLayoutGap="10px"
-    fxLayoutGap.xs="0">
-
-    
-
-        <!-- <div class="item item-1" fxFlex="15%">Item 1</div>
-        <div class="item item-2" fxFlex="20%" fxFlexOrder="3">Item 2</div>
-        <div class="item item-3" fxFlex>Item 3</div> -->
-
-        <!-- <div class="item item-1" fxFlex="100%">Section 2</div> -->
-        <div class="item item-1 pad-t-10" fxFlex="50%">
-            <!-- <img src="../assets/img/me_cartoon3.jpg" alt=""> -->
-            <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        Get to know me
-                    </mat-panel-title>
-                    <mat-panel-description>
-                        Who am I?
-                    </mat-panel-description>
-                </mat-expansion-panel-header>
-            
-                <p>This is the primary content of the panel.This is the primary content of the panel.This is the primary content of the panel.This is the primary content of the panel.This is the primary content of the panel.</p>
-            
-            </mat-expansion-panel>
-        </div>
-        <div class="item item-1 pad-t-10" fxFlex="50%">
-            <!-- <img src="../assets/img/me_cartoon3.jpg" alt=""> -->
-            <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        Get to know me
-                    </mat-panel-title>
-                    <mat-panel-description>
-                        Who am I?
-                    </mat-panel-description>
-                </mat-expansion-panel-header>
-            
-                <p>This is the primary content of the panel.This is the primary content of the panel.This is the primary content of the panel.This is the primary content of the panel.This is the primary content of the panel.</p>
-            
-            </mat-expansion-panel>
-        </div>
-        
-    </div>
-
-    <div class="container-fluid text-center"
-    fxLayout
-    fxLayout.xs="column"
-    fxLayoutAlign="center"
-    fxLayoutGap="10px"
-    fxLayoutGap.xs="0">
-        <!-- <div class="item item-4" fxFlex fxFlexOffset="50px"  fxFlexOffset.xs="0">Item 4</div>
-        <div class="item item-5" fxFlex="200px">Item 5</div> -->
-        <!-- <div class="item item-1" fxFlex="50%">Section 3.1</div>
-        <div class="item item-1" fxFlex="50%">Section 3.2</div> -->
-        <!-- <div class="item item-1" fxFlex="100%">
-            <img src="../assets/img/me_cartoon2.jpg" alt="">
-        </div> -->
-    </div>
-
-    <div class="container-fluid text-center"
-    fxLayout
-    fxLayout.xs="column"
-    fxLayoutAlign="center"
-    fxLayoutGap="10px"
-    fxLayoutGap.xs="0">
-        <!-- <div class="item item-4" fxFlex fxFlexOffset="50px"  fxFlexOffset.xs="0">Item 4</div>
-        <div class="item item-5" fxFlex="200px">Item 5</div> -->
-        <div class="item item-1" fxFlex>Section 4.1</div>
-        <div class="item item-1" fxFlex>Section 4.2</div>
-        <div class="item item-1" fxFlex>Section 4.3</div>
-        <div class="item item-1" fxFlex>Section 4.4</div>
     </div>
