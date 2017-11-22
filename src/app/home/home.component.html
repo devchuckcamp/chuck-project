@@ -7,11 +7,11 @@
 
     
         <!--Carousel Wrapper-->
-        <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+        <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'" [interval]="4000">
             <!--First slide-->
-            <mdb-slide>
+            <mdb-slide *ngFor="let slide of slides">
                 <div class="view hm-black-light">
-                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                    <img class="d-block w-100" src="{{slide.image}}" alt="First slide">
                     <div class="mask waves-light" mdbRippleRadius></div>
                 </div>
                 <div class="carousel-caption">
@@ -21,28 +21,7 @@
             </mdb-slide>
             <!--/First slide-->
             <!--Second slide-->
-            <mdb-slide>
-                <div class="view hm-black-strong">
-                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
-                    <div class="mask waves-light" mdbRippleRadius></div>
-                </div>
-                <div class="carousel-caption">
-                    <h3 class="h3-responsive">Strong mask</h3>
-                    <p>Secondary text</p>
-                </div>
-            </mdb-slide>
-            <!--/Second slide-->
-            <!--Third slide-->
-            <mdb-slide>
-                <div class="view hm-black-slight">
-                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
-                    <div class="mask waves-light" mdbRippleRadius></div>
-                </div>
-                <div class="carousel-caption">
-                    <h3 class="h3-responsive">Slight mask</h3>
-                    <p>Third text</p>
-                </div>
-            </mdb-slide>
+            
             <!--/Third slide-->
         </mdb-carousel>
         <!--/.Carousel Wrapper-->
@@ -60,7 +39,7 @@
             <img class="img-circle mar-0-auto h-425" src="../assets/img/me_cartoon3.jpg">
         </div>
         <div class="item item-1 pad-t-10" fxFlex="65%" fxFlex.sm="100%" >
-            <mat-expansion-panel class="mat-expansion-panel ng-tns-c5-0 mat-expanded" expanded>
+            <mat-expansion-panel mat-expanded class="mat-expansion-panel ng-tns-c5-0 mat-expanded" >
                 <mat-expansion-panel-header flex="50%">
                     <mat-panel-title  class="w-125">
                         <h5 class="w-125">

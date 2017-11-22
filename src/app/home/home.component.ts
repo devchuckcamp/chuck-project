@@ -19,10 +19,19 @@ export class HomeComponent implements OnInit {
     loading = false;
 
     // Image Carousel
-    public imageSources: string[] = [
-        '../assets/img/me_cartoon3.jpg',
-        '../assets/img/me_cartoon3.jpg',
-        '../assets/img/me_cartoon3.jpg',
+    public slides = [
+        {
+            image:'../assets/img/ws/qualified-programmer-nobg.png',
+        },
+        {
+            image:'../assets/img/ws/programming-life-bg.png',
+        },
+        {
+            image:'../assets/img/ws/deadline-argument-bg.png',
+        },
+        {
+            image:'../assets/img/ws/timing-can-be-a-factor.png',
+        },
      ];
 
     constructor(
